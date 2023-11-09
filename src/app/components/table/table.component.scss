@@ -1,0 +1,26 @@
+.tableWrapper {
+  border-radius: 20px;
+
+  .tableOptionsContainer{
+    max-width: 90%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .tableContainer{
+    max-width: 90%;
+    margin: auto;
+    width: 100%;
+  }
+
+  .mdc-data-table__table{
+    min-width: 100px;
+  }
+}
+
+.paginator{
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}

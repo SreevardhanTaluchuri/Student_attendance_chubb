@@ -1,0 +1,22 @@
+<mat-sidenav-container class="sidenav-container">
+    <mat-sidenav class="sidenav mat-elevation-z15" #sidenav 
+    [mode]="isScreenSmall ? 'over' : 'side'" 
+    [opened]="!isScreenSmall">
+        <mat-toolbar color="primary">
+            <span>Student Management</span>
+        </mat-toolbar>
+    </mat-sidenav>
+    
+    <mat-sidenav-content>
+      <app-toolbar (toggleSideNav)="sidenav.toggle()"></app-toolbar>
+      <ng-container *ngIf="loading">
+        <mat-spinner></mat-spinner>
+      </ng-container>
+      <ng-container *ngIf="!loading">
+        <router-outlet></router-outlet>
+      </ng-container>
+    <p>
+      <!-- <button mat-button (click)="sidenav.toggle()">sidenav.toggle()</button> -->
+    </p>
+  </mat-sidenav-content>
+</mat-sidenav-container>

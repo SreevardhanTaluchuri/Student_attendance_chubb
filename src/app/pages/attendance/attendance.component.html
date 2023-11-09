@@ -1,0 +1,8 @@
+<div class="tableWrapper">
+    <div class="attendanceHeaderContainer">
+        <button mat-raised-button (click)="navigateToHome()"><mat-icon>navigate_before</mat-icon>Back</button>
+        <h3 class="headingContainer"><span class="heading">{{student.name}}</span>`s Attendance
+        </h3>
+    </div>
+    <app-table [data]="attendance" (dialog)="openDialogBox($event)" (edit)="editAttendance($event)" (delete)="deleteAttendance($event)"  [parentComponent]="'attendance'"></app-table>
+</div>

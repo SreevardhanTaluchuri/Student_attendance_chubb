@@ -1,0 +1,3 @@
+<div class="tableWrapper">
+    <app-table [data]="students" (dialog)="openDialogBox($event)" (edit)="editStudent($event)" (delete)="deleteStudent($event)"  [parentComponent]="'student'"></app-table>
+</div>

@@ -1,0 +1,7 @@
+<app-toolbar></app-toolbar>
+<ng-container *ngIf="isLoading != 2">
+  <mat-spinner></mat-spinner>
+</ng-container>
+<ng-container *ngIf="isLoading == 2">
+  <router-outlet></router-outlet>
+</ng-container>
